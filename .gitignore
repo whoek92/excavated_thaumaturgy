@@ -1,0 +1,6 @@
+# Ignore intermediate results
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
