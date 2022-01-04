@@ -3,6 +3,7 @@
 \usepackage{parskip}                                                            % Add spacing between paras instead of indents
 \usepackage[font=bf]{caption}
 \usepackage{hyperref}
+
 \title{Excavated Thaumaturgy}
 
 % Compress title spacing compared to default
@@ -35,7 +36,7 @@
 \begin{center}
 	\includegraphics[width = 0.3\linewidth]{dead.png}
 \end{center}
-\section{Bleeding out}
+\section*{\centering {Bleeding out}}
 \textit{This rule is intended to add an unpredictable element to dying in battle.}
 
 Instead of dying immediately when a damaging effect causes your HP to go to 0 or lower, you start bleeding out:
@@ -55,7 +56,7 @@ Instead of dying immediately when a damaging effect causes your HP to go to 0 or
 \begin{center}
 	\includegraphics[width = 0.3\linewidth]{d20_weapons.jpg}
 \end{center}
-\section{Single D20 Combat}
+\section*{\centering {Single D20 Combat}}
 \textit{Copied from a \href{https://www.youtube.com/watch?v=VflmXb0EAbI}{Bandit's Keep} video. A system that combines the attack and damage roll.}
 
 This combat system is designed to be used in place of the standard system form B/X D\&D
@@ -73,20 +74,19 @@ If the attack roll and AC are equal, a critical hit occurs
 \vspace{0.5cm}
 
 \subsection*{Rules Changes}
-MAGIC-USERS can wield the following weapons:\\
+1. Magic-Users can wield the following weapons:\\
 Dagger, Staff, Sling
 
-The weapon defense factor is based on weapon length and how the weapon is typically used in combat (to the best if my knowledge) thus longer weapons tend to give the greatest defense.
+2. The weapon defense factor is based on weapon length and how the weapon is typically used in combat (to the best if my knowledge) thus longer weapons tend to give the greatest defense.
+\begin{itemize}
+	\item Daggers represent blades around 12-18 inches in length.
+	\item Short swords represent blades of about 24” ie Roman Gladius.
+	\item Swords represent blades of about 30” ie Arming Swords.
+	\item Two-Handed Swords have blades of about 35” ie Long Swords.
+	\item The much larger Great Sword would be considered a Pole Arm.
+\end{itemize}
 
-Daggers represent blades around 12-18 inches in length.\\
-Short swords represent blades of about 24” ie Roman Gladius.\\
-Swords represent blades of about 30” ie Arming Swords.\\
-Two-Handed Swords have blades of about 35” ie Long Swords.\\
-The much larger Great Sword would be considered a Pole Arm.
-
-\vspace{0.5cm}
-
-\subsection*{Calculating Armor Class}
+\textbf{Calculating Armor Class}\\
 Three factors affect Player Character (PC) Armor Class (AC)
 
 Armor Worn (see Table \ref{table:BaseArmorClassValue} for base AC value)\\
@@ -94,7 +94,7 @@ Dexterity Score (See Table \ref{table:Dexterity})\\
 Weapon Defense Bonus (See Table \ref{table:WeaponAttackAndDefenseRatings}))\\
 Weapon defense ONLY affects AC against Melee attacks
 
-Note: Monsters calculate their AC in a different manner, see section \hyperref[subsection:MonsterAC]{Calculating Monster AC}.
+Note: Monsters calculate their AC in a different manner, see section \hyperref[subsection:MonsterAC]{OTHER CONSIDERATIONS}.
 
 \begin{table}[h!]
 	\centering
@@ -130,27 +130,24 @@ A Shield grants an AC bonus of +3 vs melee and +5 vs missile
 	\label{table:Dexterity}
 \end{table}
 
-\subsection*{Weapon Defence Bonus}
+\textbf{Weapon Defence Bonus}\\
 Each weapon will grant its wielder a bonus to attack and often a bonus to their AC as well, See Table B2 for details.
 
-\subsection*{Fighting with Two Weapons}
-Some weapons can be used in the off-hand (defensively) AC bonus for this use is listed in parentheses on table B2.
-Example:
-A thief fighting with a short sword (+4) and defending with their dagger (+1) would get a total weapon bonus of +5 to their AC
+\textbf{Fighting with Two Weapons}\\
+Some weapons can be used in the off-hand (defensively) AC bonus for this use is listed in parentheses on table B2.\\
+Example: \textit{A thief fighting with a short sword (+4) and defending with their dagger (+1) would get a total weapon bonus of +5 to their AC}
 
-\subsection*{Missile Weapons}
+\textbf{Missile Weapons}\\
 Missile weapons grant no bonus to AC
 
-\vspace{0.5cm}
-
-\subsection*{Calculating Attack Bonus}
+\textbf{Calculating Attack Bonus}\\
 Three factors modify PC’s Total Attack Bonus (TAB):
 \begin{itemize}
 	\item PC Fighting Skill (See Table \ref{table:PCFightingSkill})
 	\item Strength (Melee) or Dexterity (Missile) Score
 	\item Weapon Attack Bonus (See Table \ref{table:WeaponAttackAndDefenseRatings})
 \end{itemize}
-Note: Monsters calculate their attack bonus in a different manner, see Section \hyperref[subsection:MonsterAC]{Calculating Monster AC}.
+Note: Monsters calculate their attack bonus in a different manner, see Section \hyperref[subsection:MonsterAC]{OTHER CONSIDERATIONS}.
 
 \begin{table}[h!]
 	\centering
@@ -205,9 +202,7 @@ Note: Monsters calculate their attack bonus in a different manner, see Section \
 * Two-handed weapon.\\
 ** Also destroys opponents shield on a roll that beats AC by 4 or more.
 
-\vspace{0.5cm}
-
-\subsection*{Missile Weapons}
+\textbf{Missile Weapons}\\
 Missile weapons grant no bonus to AC and add a bonus to attack rolls based on range as follows:
 
 \begin{table}[h!]
@@ -226,12 +221,11 @@ Missile weapons grant no bonus to AC and add a bonus to attack rolls based on ra
 \vspace{0.5cm}
 
 \subsection*{Other Considerations}
+\label{subsection:MonsterAC}
 \textbf{Unarmed and Unarmored}\\
 A PC (or human type) may add their level (or HD) to their base AC if they are unarmed AND unarmored.\\
 Example:\\
 Our 3rd level thief has been throw in a cell for picking pockets after being stripped to just their normal clothes. Their AC is currently 13 plus any DEX bonus.
-
-\vspace{0.5cm}
 
 \textbf{Critical Hits}\\
 Any attack roll the EQUALS the AC of an opponent is considered a CRITICAL HIT. The attacker my use a result from below or make up something appropriate at the DM’s discretion.
@@ -243,7 +237,6 @@ Any attack roll the EQUALS the AC of an opponent is considered a CRITICAL HIT. T
 \end{enumerate}
 
 \textbf{Calculating Monster AC}\\
-\label{subsection:MonsterAC}
 If your monster book uses AAC start with that number and add to it the number of Hit Dice (HD) the monster has. Optionally, if the creature is welding a weapon add the defense modifier for the weapon instead of the HD. If you are using B/X D\&D (descending AC) subtract the monster’s AC from 19 then add HD or weapon defense as above.
 
 \textbf{Calculating Monster Attack Bonus}\\
@@ -270,7 +263,7 @@ Monster’s attack bonus is 5+ it’s HD
 \begin{center}
 	\includegraphics[width = 0.3\linewidth]{shame_elf.jpg}
 \end{center}
-\section{"Not Quite Vancian"-magic}
+\section*{\centering {"Not Quite Vancian"-magic}}
 \textit{This optional rule is intended to make old-school (Vancian) magic a bit less restrictive. Based on the magic system used in \href{https://www.drivethrurpg.com/product/255088/The-Black-Hack-Second-Edition}{The Black Hack}}
 
 After casting a spell, the spellcaster makes a ability check - Wisdom for clerics, Intelligence for magic-users - the spell slot is only lost on a failed check. On every second and consecutive roll for the same slot, roll twice: the spell slot is lost if one or both checks fail.//
@@ -280,7 +273,7 @@ After casting a spell, the spellcaster makes a ability check - Wisdom for cleric
 \begin{center}
 	\includegraphics[width = 0.4\linewidth]{cantrip_logo.jpg}
 \end{center}
-\section{0-level spells}
+\section*{\centering {0-level spells}}
 \textit{This optional rule can be used to make the magic user ever so slightly more mischievous. Copied from \href{http://saveordie.info/?p=90}{saveordie.info}}
 
 The Cantrip is a tiny spell created by practicing students of the magical arts during their apprenticeship and while a minor dweomer they still have some uses to the adventuring Magic-User. Elves do not obtain cantrips at first level as they don’t learn such in their youth, though a friendly Magic User may teach them at a later date.
@@ -439,6 +432,8 @@ By means of this cantrip, the caster causes an unseen hand to perform simple act
 If this cantrip is used on a spellcaster, the target must make a saving throw vs. magic, with success meaning that the target is not distracted. Failure causes a 1 round distraction and may interrupt spell casting at DM’s discretion.\\
 \end{samepage}
 
+\newpage
+
 \vspace{0.5cm}
 \part*{Cursed Artifacts}
 \vspace{0.5cm}
@@ -446,7 +441,7 @@ If this cantrip is used on a spellcaster, the target must make a saving throw vs
 \begin{center}
 	\includegraphics[width = 0.3\linewidth]{Garthruks_axe.png}
 \end{center}
-\section{The Axe of Garthruk}
+\section*{\centering {The Axe of Garthruk}}
 \textit{A blackened axe made with crude green metal. It angrily shakes when approached.}
 
 Garthruk the Orc Chief is captured within the axe. He wants to challenge the great and mighty, and escape his metal prison.
